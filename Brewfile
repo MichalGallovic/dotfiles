@@ -4,6 +4,7 @@ tap 'homebrew/cask-eid'
 tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
 tap 'homebrew/bundle'
+tap 'heroku/brew'
 
 # Binaries
 brew 'bash' # Latest Bash version
@@ -20,6 +21,7 @@ brew 'trash' # Manage the Trash bin
 brew 'tree' # List directories in a tree structure
 brew 'zlib' # Needed for Memcached
 brew 'z'
+brew 'heroku'
 
 # Spatie Medialibrary
 brew 'jpegoptim'
