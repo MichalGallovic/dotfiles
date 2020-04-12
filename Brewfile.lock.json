@@ -923,6 +923,12 @@
         "options": {
           "full_name": "dash3"
         }
+      },
+      "slack": {
+        "version": "4.4.2",
+        "options": {
+          "full_name": "slack"
+        }
       }
     },
     "mas": {

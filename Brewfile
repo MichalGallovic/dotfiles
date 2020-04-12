@@ -85,6 +85,7 @@ cask 'transmission'
 cask 'paw'
 cask 'visual-studio-code'
 cask 'signal'
+cask 'slack'
 
 # Quicklook
 cask 'qlcolorcode'
