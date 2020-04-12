@@ -95,6 +95,10 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool
 defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 
+# Use bluetooth dongle instaed of mac controller
+# sudo nvram bluetoothHostControllerSwitchBehavior=always
+# sudo nvram -d bluetoothHostControllerSwitchBehavior
+
 # Increase sound quality for Bluetooth headphones/headsets
 defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
 
