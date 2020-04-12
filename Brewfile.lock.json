@@ -917,6 +917,12 @@
         "options": {
           "full_name": "qlstephen"
         }
+      },
+      "dash3": {
+        "version": "3.4.4",
+        "options": {
+          "full_name": "dash3"
+        }
       }
     },
     "mas": {
