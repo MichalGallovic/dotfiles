@@ -20,7 +20,6 @@ brew 'pkg-config' # https://github.com/driesvints/dotfiles/issues/20
 brew 'trash' # Manage the Trash bin
 brew 'tree' # List directories in a tree structure
 brew 'zlib' # Needed for Memcached
-brew 'z'
 brew 'heroku'
 
 # Spatie Medialibrary
@@ -85,6 +84,7 @@ cask 'virtualbox-extension-pack'
 cask 'transmission'
 cask 'paw'
 cask 'visual-studio-code'
+cask 'signal'
 
 # Quicklook
 cask 'qlcolorcode'
