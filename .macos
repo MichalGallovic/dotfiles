@@ -381,6 +381,10 @@ defaults write com.apple.messageshelper.MessageController SOInputLineSettings -d
 # Disable continuous spell checking
 defaults write com.apple.messageshelper.MessageController SOInputLineSettings -dict-add "continuousSpellCheckingEnabled" -bool false
 
+#################
+# Default Browser
+#################
+open -a "Brave Browser" --args --make-default-browser
 
 ###############################################################################
 # Kill affected applications                                                  #
