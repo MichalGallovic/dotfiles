@@ -120,8 +120,8 @@ defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 # Screen                                                                      #
 ###############################################################################
 
-# Save screenshots to the desktop
-defaults write com.apple.screencapture location -string "${HOME}/Documents/Screenshots"
+# Save screenshots to the Dropbox
+defaults write com.apple.screencapture location -string "${HOME}/Dropbox/Screenshots"
 
 # Enable subpixel font rendering on non-Apple LCDs
 defaults write NSGlobalDomain AppleFontSmoothing -int 2

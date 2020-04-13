@@ -929,6 +929,18 @@
         "options": {
           "full_name": "slack"
         }
+      },
+      "tunnelblick": {
+        "version": "3.8.2,5480",
+        "options": {
+          "full_name": "tunnelblick"
+        }
+      },
+      "netnewswire": {
+        "version": "5.0.3",
+        "options": {
+          "full_name": "netnewswire"
+        }
       }
     },
     "mas": {

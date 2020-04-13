@@ -86,6 +86,8 @@ cask 'paw'
 cask 'visual-studio-code'
 cask 'signal'
 cask 'slack'
+cask 'tunnelblick'
+cask 'netnewswire'
 
 # Quicklook
 cask 'qlcolorcode'
