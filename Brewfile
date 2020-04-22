@@ -21,6 +21,7 @@ brew 'trash' # Manage the Trash bin
 brew 'tree' # List directories in a tree structure
 brew 'zlib' # Needed for Memcached
 brew 'heroku'
+brew 'wget'
 
 # Spatie Medialibrary
 brew 'jpegoptim'
@@ -63,9 +64,7 @@ cask 'tor-browser'
 cask 'joplin'
 cask 'dropbox'
 cask 'spotify'
-cask 'nordvpn'
 cask 'keepassxc'
-cask 'bettertouchtool'
 cask 'alfred2'
 cask 'notion'
 cask 'the-unarchiver'
@@ -86,8 +85,10 @@ cask 'paw'
 cask 'visual-studio-code'
 cask 'signal'
 cask 'slack'
-cask 'tunnelblick'
 cask 'netnewswire'
+cask 'hubstaff'
+cask 'bettertouchtool'
+cask 'inkscape'
 
 # Quicklook
 cask 'qlcolorcode'
@@ -100,3 +101,4 @@ cask 'qlstephen'
 # Mac App Store
 mas 'Keynote', id: 409183694
 mas 'Numbers', id: 409203825
+mas 'NordVPN IKE - Unlimited VPN', id: 1116599239

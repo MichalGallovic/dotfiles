@@ -5,3 +5,9 @@ heroku_remote() {
 cheat() {
   curl cheat.sh/$1
 }
+
+# Javascript
+eslint_disable() {
+  echo "// eslint-disable-next-line $1" | pbcopy
+}
+
