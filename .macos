@@ -95,10 +95,6 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool
 defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 
-# Use bluetooth dongle instaed of mac controller
-# sudo nvram bluetoothHostControllerSwitchBehavior=always
-# sudo nvram -d bluetoothHostControllerSwitchBehavior
-
 # Increase sound quality for Bluetooth headphones/headsets
 defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
 
@@ -115,6 +111,10 @@ defaults write NSGlobalDomain InitialKeyRepeat -int 20
 
 # Disable auto-correct
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
+
+# Settings -> Keyboard -> Shortcuts
+# Use keyboard navigation to move focus between controls
+defaults write "Apple Global Domain" AppleKeyboardUIMode 2
 
 ###############################################################################
 # Screen                                                                      #
@@ -384,7 +384,7 @@ defaults write com.apple.messageshelper.MessageController SOInputLineSettings -d
 #################
 # Default Browser
 #################
-open -a "Brave Browser" --args --make-default-browser
+open -a "Firefox" --args --make-default-browser
 
 ###############################################################################
 # Kill affected applications                                                  #
@@ -397,3 +397,9 @@ for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
   killall "${app}" &> /dev/null
 done
 echo "Done. Note that some of these changes require a logout/restart to take effect."
+
+##################################
+# Link server for iphone backups 
+##################################
+rmdir ~/Library/Application\ Support/MobileSync/Backup
+ln -s /Volumes/serverik_michal/Backups/Mobile/iPhone/Backup ~/Library/Application\ Support/MobileSync

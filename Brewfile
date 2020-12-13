@@ -65,7 +65,7 @@ cask 'joplin'
 cask 'dropbox'
 cask 'spotify'
 cask 'keepassxc'
-cask 'alfred2'
+cask 'alfred'
 cask 'notion'
 cask 'the-unarchiver'
 cask 'vlc'
@@ -89,6 +89,7 @@ cask 'netnewswire'
 cask 'hubstaff'
 cask 'bettertouchtool'
 cask 'inkscape'
+cask 'calibre'
 
 # Quicklook
 cask 'qlcolorcode'
@@ -102,3 +103,5 @@ cask 'qlstephen'
 mas 'Keynote', id: 409183694
 mas 'Numbers', id: 409203825
 mas 'NordVPN IKE - Unlimited VPN', id: 1116599239
+mas 'Coderunner 3', id: 955297617
+mas 'Lightshot Screenshot', id: 526298438
