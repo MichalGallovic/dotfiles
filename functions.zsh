@@ -21,6 +21,10 @@ phpv() {
     brew link --force --overwrite $1
     brew services start $1
     composer global update
-	rm -f ~/.config/valet/valet.sock
+    rm -f ~/.config/valet/valet.sock
     valet install
+}
+
+backup_local() {
+  rsync -av --delete --exclude=node_modules --exclude=.git --exclude=vendor $1 $2
 }
