@@ -90,6 +90,7 @@ cask 'hubstaff'
 cask 'bettertouchtool'
 cask 'inkscape'
 cask 'calibre'
+cask 'obsidian'
 
 # Quicklook
 cask 'qlcolorcode'
