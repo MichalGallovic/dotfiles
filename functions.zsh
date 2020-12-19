@@ -26,5 +26,5 @@ phpv() {
 }
 
 backup_local() {
-  rsync -aW --progress --exclude=node_modules --exclude=.git --exclude=vendor --exclude=bower_components --exclude=venv --exclude=.env $1 $2
+  rsync -aW --progress --exclude=node_modules --exclude=vendor --exclude=bower_components --exclude=venv --exclude=.env $1 $2
 }
