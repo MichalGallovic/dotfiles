@@ -18,6 +18,8 @@ First, go through the checklist below to make sure you didn't forget anything be
 - Did you save all of your work from apps which aren't synced through iCloud?
 - Did you remember to export important data from your local database?
 - Did you update [mackup](https://github.com/lra/mackup) to the latest version and ran `mackup backup`?
+- Did you export firefox bookmarks ?
+- Did you export Phpstorm settings ?
 
 ### Installing macOS cleanly
 
