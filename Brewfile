@@ -93,6 +93,7 @@ cask 'inkscape'
 cask 'calibre'
 cask 'obsidian'
 cask 'kap'
+cask 'coderunner'
 
 # Quicklook
 cask 'qlcolorcode'
@@ -106,5 +107,5 @@ cask 'qlstephen'
 mas 'Keynote', id: 409183694
 mas 'Numbers', id: 409203825
 mas 'NordVPN IKE - Unlimited VPN', id: 1116599239
-mas 'Coderunner 3', id: 955297617
 mas 'Lightshot Screenshot', id: 526298438
+mas 'Money Pro', id: 972572731
