@@ -1,6 +1,5 @@
 # Taps
 tap 'homebrew/cask'
-tap 'homebrew/cask-eid'
 tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
 tap 'homebrew/bundle'
@@ -58,7 +57,6 @@ cask 'firefox'
 cask 'google-chrome'
 cask 'imageoptim'
 cask 'insomnia'
-cask 'java'
 cask 'mysqlworkbench'
 cask 'skype'
 cask 'tor-browser'
@@ -94,6 +92,9 @@ cask 'calibre'
 cask 'obsidian'
 cask 'kap'
 cask 'coderunner'
+
+# Java 8
+cask 'adoptopenjdk8'
 
 # Quicklook
 cask 'qlcolorcode'
