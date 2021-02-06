@@ -21,6 +21,7 @@ brew 'tree' # List directories in a tree structure
 brew 'zlib' # Needed for Memcached
 brew 'heroku'
 brew 'wget'
+brew 'htop'
 
 # Spatie Medialibrary
 brew 'jpegoptim'

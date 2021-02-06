@@ -9,6 +9,9 @@ alias c="clear"
 # Laravel
 alias artisan="php artisan"
 
+# Git
+alias git_empty="git commit --allow-empty -m "
+
 # Directories
 alias dotfiles="cd $DOTFILES"
 alias library="cd $HOME/Library"
