@@ -93,6 +93,7 @@ cask 'calibre'
 cask 'obsidian'
 cask 'kap'
 cask 'coderunner'
+cask 'monitorcontrol'
 
 # Java 8
 cask 'adoptopenjdk8'
