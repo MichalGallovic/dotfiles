@@ -403,3 +403,10 @@ echo "Done. Note that some of these changes require a logout/restart to take eff
 ##################################
 rmdir ~/Library/Application\ Support/MobileSync/Backup
 ln -s /Volumes/serverik_michal/Backups/Mobile/iPhone/Backup ~/Library/Application\ Support/MobileSync
+
+##################################
+# Login Items
+##################################
+osascript -e 'tell application "System Events" to make login item at end with properties {name: "Notes",path:"/Applications/Dropbox.app", hidden:false}'
+osascript -e 'tell application "System Events" to make login item at end with properties {name: "Notes",path:"/Applications/Alfred 4.app", hidden:false}'
+osascript -e 'tell application "System Events" to make login item at end with properties {name: "Notes",path:"/Applications/MonitorControl.app", hidden:false}'
