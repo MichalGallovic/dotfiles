@@ -22,6 +22,7 @@ brew 'zlib' # Needed for Memcached
 brew 'heroku'
 brew 'wget'
 brew 'htop'
+brew 'cloc'
 
 # Spatie Medialibrary
 brew 'jpegoptim'
