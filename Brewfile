@@ -4,6 +4,7 @@ tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
 tap 'homebrew/bundle'
 tap 'heroku/brew'
+tap 'alexhallam/tidy-viewer'
 
 # Binaries
 brew 'bash' # Latest Bash version
@@ -46,6 +47,7 @@ brew 'redis'
 brew 'yarn'
 brew 'nvm'
 brew 'heroku'
+brew 'tidy-viewer'
 
 # Apps
 cask '1password'
