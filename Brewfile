@@ -97,6 +97,9 @@ cask 'obsidian'
 cask 'kap'
 cask 'coderunner'
 cask 'monitorcontrol'
+cask 'ray'
+cask 'tinkerwell'
+cask 'openvpn-connect'
 
 # Java 8
 cask 'adoptopenjdk8'
