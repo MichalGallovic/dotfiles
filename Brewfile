@@ -4,7 +4,6 @@ tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
 tap 'homebrew/bundle'
 tap 'heroku/brew'
-tap 'alexhallam/tidy-viewer'
 
 # Binaries
 brew 'bash' # Latest Bash version
@@ -34,10 +33,10 @@ brew 'gifsicle'
 
 # Development
 brew 'php'
-brew 'php@7.3'
-brew 'php@7.2'
+brew 'php@8.0'
 brew 'php@7.4'
 brew 'python'
+brew 'rustup'
 brew 'composer'
 brew 'imagemagick'
 brew 'mysql'
@@ -47,7 +46,6 @@ brew 'redis'
 brew 'yarn'
 brew 'nvm'
 brew 'heroku'
-brew 'tidy-viewer'
 
 # Apps
 cask '1password'
@@ -81,8 +79,6 @@ cask 'tableplus'
 cask 'cyberduck'
 cask 'phpstorm'
 cask 'dash3'
-cask 'virtualbox'
-cask 'virtualbox-extension-pack'
 cask 'transmission'
 cask 'paw'
 cask 'visual-studio-code'
@@ -100,6 +96,7 @@ cask 'monitorcontrol'
 cask 'ray'
 cask 'tinkerwell'
 cask 'openvpn-connect'
+cask 'teamviewer'
 
 # Java 8
 cask 'adoptopenjdk8'
