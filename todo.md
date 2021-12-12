@@ -1,0 +1,1 @@
+- Language Region > Advanced > Decimal .
