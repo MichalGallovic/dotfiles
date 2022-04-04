@@ -1,4 +1,4 @@
-# Taps
+# TapsGA
 tap 'homebrew/cask'
 tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
@@ -97,6 +97,7 @@ cask 'ray'
 cask 'tinkerwell'
 cask 'openvpn-connect'
 cask 'teamviewer'
+cask 'anki'
 
 # Java 8
 cask 'adoptopenjdk8'

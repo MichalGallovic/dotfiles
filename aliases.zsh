@@ -17,3 +17,7 @@ alias git_empty="git commit --allow-empty -m "
 # Directories
 alias dotfiles="cd $DOTFILES"
 alias library="cd $HOME/Library"
+
+# Aws
+alias awsp="aws --profile cantrill-iamadmin-production"
+alias awsg="aws --profile cantrill-iamadmin-general"
