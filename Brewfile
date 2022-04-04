@@ -1,4 +1,4 @@
-# TapsGA
+# Taps
 tap 'homebrew/cask'
 tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
