@@ -99,6 +99,7 @@ cask 'tinkerwell'
 cask 'openvpn-connect'
 cask 'teamviewer'
 cask 'anki'
+cask 'phpmon'
 
 # Java 8
 cask 'adoptopenjdk8'

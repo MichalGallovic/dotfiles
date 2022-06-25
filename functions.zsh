@@ -15,16 +15,6 @@ eslint_disable() {
   echo "// eslint-disable-next-line $1" | pbcopy
 }
 
-phpv() {
-    valet stop
-    brew unlink php@7.0 php@7.1 php@7.2 php@7.4 php@8.0 php@8.1
-    brew link --force --overwrite $1
-    brew services start $1
-    composer global update
-    rm -f ~/.config/valet/valet.sock
-    valet install
-}
-
 backup_local() {
   rsync -aW --progress --exclude=node_modules --exclude=vendor --exclude=bower_components --exclude=venv --exclude=.env $1 $2
 }

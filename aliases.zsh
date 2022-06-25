@@ -9,7 +9,7 @@ alias tbe="z tratta-backend && phpstorm ."
 alias tfe="z revport-frontend && code ."
 
 # Laravel
-alias artisan="php artisan"
+alias art="php artisan"
 
 # Git
 alias git_empty="git commit --allow-empty -m "
