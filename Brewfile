@@ -23,6 +23,7 @@ brew 'heroku'
 brew 'wget'
 brew 'htop'
 brew 'cloc'
+brew 'asdf'
 
 # Spatie Medialibrary
 brew 'jpegoptim'
@@ -100,6 +101,7 @@ cask 'openvpn-connect'
 cask 'teamviewer'
 cask 'anki'
 cask 'phpmon'
+cask 'loom'
 
 # Java 8
 cask 'adoptopenjdk8'
