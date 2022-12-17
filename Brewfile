@@ -104,3 +104,4 @@ mas 'Keynote', id: 409183694
 mas 'Numbers', id: 409203825
 mas 'Lightshot Screenshot', id: 526298438
 mas 'Money Pro', id: 972572731
+mas 'Things 3', id: 904280696

@@ -29,6 +29,7 @@ brew services start mysql
 
 # Set default MySQL root password and auth type.
 mysql -u root -e "ALTER USER root@localhost IDENTIFIED WITH mysql_native_password BY 'password'; FLUSH PRIVILEGES;"
+mysql -u root -e "create user valet identified with mysql_native_password by 'secret'; GRANT ALL PRIVILEGES ON *.* TO 'valet'@'%'; FLUSH PRIVILEGES;"
 
 # Non brew dependencies
 # $DOTFILES/non-brew-install.sh
