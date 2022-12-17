@@ -24,7 +24,26 @@ First, go through the checklist below to make sure you didn't forget anything be
 
 ### Installing macOS cleanly
 
-After going to our checklist above and making sure you backed everything up, we're going to cleanly install macOS with the latest release. Follow [this article](https://www.imore.com/how-do-clean-install-macos) to cleanly install the latest macOS version.
+After going to our checklist above and making sure you backed everything up, we're going to cleanly install macOS with the latest release.
+To install fresh macOs:
+
+```
+# download desired version of macOs using
+git clone https://gitlab.com/julianfairfax/macos-downloader.git
+
+# create bootable usb
+sudo ./Install\ macOS\ Monterey.app/Contents/Resources/createinstallmedia --volume /Volumes/<usb> --applicationpath <path_to_installation> --nointeraction
+
+# this will erase, format and create bootable usb with desired version of osx
+# you should see output like
+# Erasing Disk: 0%... 10%... 20%...100%...
+# Copying installer files to disk...
+# Copy complete.
+# Making disk bootable...
+# Copying boot files...
+# Copy complete.
+# Done.
+```
 
 ### Setting up your Mac
 
