@@ -14,6 +14,10 @@ if test ! $(which brew); then
   eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
+# Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
+rm -rf $HOME/.zshrc
+ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
+
 # Update Homebrew recipes
 brew update
 
@@ -21,18 +25,11 @@ brew update
 brew tap homebrew/bundle
 brew bundle --file $DOTFILES/Brewfile
 
-# Start brew services
-brew services start mysql
-
-# Current php@7.4
-brew unlink php@8.0 php@8.1
-brew link --force --overwrite php@7.4
-
-# Non brew dependencies
-$DOTFILES/non-brew-install.sh
-
 # Set default MySQL root password and auth type.
 mysql -u root -e "ALTER USER root@localhost IDENTIFIED WITH mysql_native_password BY 'password'; FLUSH PRIVILEGES;"
+
+# Non brew dependencies
+# $DOTFILES/non-brew-install.sh
 
 # Install PHP extensions with PECL
 # printf "\n" accepts default for each prompt
@@ -41,14 +38,13 @@ mysql -u root -e "ALTER USER root@localhost IDENTIFIED WITH mysql_native_passwor
 printf "\n" | pecl install imagick redis
 
 # Install global Composer packages
-/opt/homebrew/bin/composer global require laravel/installer laravel/valet laravel/vapor-cli
+/opt/homebrew/bin/composer global require laravel/installer laravel/valet laravel/vapor-cli beyondcode/expose spatie/global-ray
 
 # Install Laravel Valet
 $HOME/.composer/vendor/bin/valet install
 
-# Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
-rm -rf $HOME/.zshrc
-ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
+# Install Global Ray
+$HOME/.composer/vendor/bin/global-ray install
 
 # Symlink the Mackup config file to the home directory
 ln -s $HOME/.dotfiles/.mackup.cfg $HOME/.mackup.cfg
