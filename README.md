@@ -50,6 +50,9 @@ sudo ./Install\ macOS\ Monterey.app/Contents/Resources/createinstallmedia --volu
 If you did all of the above you may now follow these install instructions to setup a new Mac.
 
 1. Update macOS to the latest version with the App Store
+```
+curl https://raw.githubusercontent.com/MichalGallovic/dotfiles/macos/12-monterey/.ssh | sh -s "<your-email-address>"
+```
 2. Install Xcode from the App Store, open it and accept the license agreement
 3. Install macOS Command Line Tools by running `xcode-select --install`
 4. [Generate a new public and private SSH key](https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) and add them to Github
