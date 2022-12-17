@@ -4,6 +4,8 @@ tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
 tap 'homebrew/bundle'
 tap 'heroku/brew'
+tap 'nicoverbruggen/homebrew-cask'
+tap 'shivammathur/php'
 
 # Binaries
 brew 'bash' # Latest Bash version
@@ -36,7 +38,7 @@ brew 'gifsicle'
 brew 'php'
 brew 'php@8.1'
 brew 'php@8.0'
-brew 'php@7.4'
+brew 'shivammathur/php/php@7.4'
 brew 'python'
 brew 'composer'
 brew 'imagemagick'
@@ -57,7 +59,6 @@ cask 'google-chrome'
 cask 'imageoptim'
 cask 'joplin'
 cask 'dropbox'
-cask 'private-internet-access'
 cask 'spotify'
 cask 'keepassxc'
 cask 'alfred'
@@ -88,9 +89,7 @@ cask 'openvpn-connect'
 cask 'teamviewer'
 cask 'anki'
 cask 'loom'
-
-# Java 8
-cask 'adoptopenjdk8'
+cask 'phpmon'
 
 # Quicklook
 cask 'qlcolorcode'
