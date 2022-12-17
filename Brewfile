@@ -87,7 +87,6 @@ cask 'tinkerwell'
 cask 'openvpn-connect'
 cask 'teamviewer'
 cask 'anki'
-cask 'phpmon'
 cask 'loom'
 
 # Java 8
