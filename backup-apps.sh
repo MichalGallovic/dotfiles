@@ -3,3 +3,6 @@ cp -R ~/Library/Group\ Containers/G69SCX94XU.duck/Library/Application\ Support/d
 
 # Sublime text 3
 cp -R ~/Library/Application\ Support/Sublime\ Text\ 3 ~/Dropbox/Mackup/Applications/Sublime\ Text\ 3
+
+# Tratta Aliases
+cp ~/.dotfiles/tratta-aliases.zsh ~/Dropbox/backup/tratta-aliases.sh
