@@ -90,6 +90,7 @@ cask 'teamviewer'
 cask 'anki'
 cask 'loom'
 cask 'phpmon'
+cask 'portfolioperformance'
 
 # Quicklook
 cask 'qlcolorcode'
