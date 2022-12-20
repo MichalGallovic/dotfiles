@@ -1,1 +1,3 @@
 - Language Region > Advanced > Decimal .
+- Turn off autocapitalization and other automatic writing stuff / autocompletion
+- Turn off cmd <- and cmd -> (used in phpstorm)

@@ -49,6 +49,8 @@ brew 'redis'
 brew 'yarn'
 brew 'nvm'
 brew 'heroku'
+brew 'sqlite-utils'
+brew 'datasette'
 
 # Apps
 cask '1password'
