@@ -1,3 +1,7 @@
 - Language Region > Advanced > Decimal .
 - Turn off autocapitalization and other automatic writing stuff / autocompletion
 - Turn off cmd <- and cmd -> (used in phpstorm)
+- PHPStorm - always select opened file
+- PHPStorm - Disable inlay hints
+- PHPStorm - exclude vendor and storage
+- Global ray - make sure to enable in your php version global-ray install
