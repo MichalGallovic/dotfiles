@@ -27,4 +27,4 @@ alias awsg="aws --profile cantrill-iamadmin-general"
 source ~/.dotfiles/tratta-aliases.zsh
 
 # SSH Aliases
-source ~/.dotfiles/ssh-aliases.sh
+source ~/.dotfiles/ssh-aliases.zsh
