@@ -19,6 +19,9 @@ alias git_last="git branch --sort=-committerdate | head -n 10"
 alias dotfiles="cd $DOTFILES"
 alias library="cd $HOME/Library"
 
+# Docker & Colima
+alias docker_start="colima start --cpu 4 --memory 8"
+
 # Aws
 alias awsp="aws --profile cantrill-iamadmin-production"
 alias awsg="aws --profile cantrill-iamadmin-general"
