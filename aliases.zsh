@@ -11,6 +11,13 @@ alias brew_bundle="brew bundle --file $DOTFILES/Brewfile"
 alias art="php artisan"
 
 # Git
+alias add="git add . --all"
+alias commit="git commit"
+alias checkout="git checkout"
+alias pull="git pull"
+alias push="git push origin HEAD"
+alias merge="git merge"
+alias status="git status"
 alias git_empty="git commit --allow-empty -m "
 # 10 last branches I've committed to 
 alias git_last="git branch --sort=-committerdate | head -n 10"

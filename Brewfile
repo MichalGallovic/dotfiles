@@ -5,7 +5,7 @@ tap 'homebrew/cask-versions'
 tap 'homebrew/bundle'
 tap 'heroku/brew'
 tap 'nicoverbruggen/homebrew-cask'
-tap 'shivammathur/php'
+tap 'hashicorp/tap'
 
 # Binaries
 brew 'bash' # Latest Bash version
@@ -35,10 +35,6 @@ brew 'svgo'
 brew 'gifsicle'
 
 # Development
-brew 'php'
-brew 'php@8.1'
-brew 'php@8.0'
-brew 'shivammathur/php/php@7.4'
 brew 'python'
 brew 'composer'
 brew 'imagemagick'
@@ -54,6 +50,7 @@ brew 'datasette'
 brew 'docker'
 brew 'docker-compose'
 brew 'colima'
+brew 'hashicorp/tap/terraform'
 
 # Apps
 cask '1password'
@@ -93,9 +90,9 @@ cask 'openvpn-connect'
 cask 'teamviewer'
 cask 'anki'
 cask 'loom'
-cask 'phpmon'
 cask 'portfolioperformance'
 cask 'helo'
+cask 'herd'
 
 # Quicklook
 cask 'qlcolorcode'

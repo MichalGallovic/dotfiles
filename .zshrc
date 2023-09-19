@@ -112,3 +112,4 @@ export LANG=en_US.UTF-8
 
 
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
