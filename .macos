@@ -310,6 +310,16 @@ defaults write com.apple.mail DisableInlineAttachmentViewing -bool true
 # Disable automatic spell checking
 defaults write com.apple.mail SpellCheckingBehavior -string "NoSpellCheckingEnabled"
 
+# Adjusting the Menu Bar Whitespace Settings so apps don't hide behind the notch
+# https://flaky.build/built-in-workaround-for-applications-hiding-under-the-macbook-pro-notch
+defaults -currentHost write -globalDomain NSStatusItemSelectionPadding -int 6
+defaults -currentHost write -globalDomain NSStatusItemSpacing -int 6
+# After running these commands, you need to log out and log back in
+# Revert to the original values
+# defaults -currentHost delete -globalDomain NSStatusItemSelectionPadding
+# defaults -currentHost delete -globalDomain NSStatusItemSpacing
+
+
 ###############################################################################
 # Spotlight                                                                   #
 ###############################################################################

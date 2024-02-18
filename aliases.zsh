@@ -18,7 +18,12 @@ alias pull="git pull"
 alias push="git push origin HEAD"
 alias merge="git merge"
 alias status="git status"
+upstream() {
+  git branch --set-upstream-to=origin/$1 $1
+}
 alias git_empty="git commit --allow-empty -m "
+alias wip="add && commit -m 'wip' && push"
+alias master="checkout master"
 # 10 last branches I've committed to 
 alias git_last="git branch --sort=-committerdate | head -n 10"
 
