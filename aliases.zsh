@@ -34,6 +34,3 @@ alias library="cd $HOME/Library"
 
 # Tratta
 source ~/.dotfiles/tratta-aliases.zsh
-
-# SSH Aliases
-source ~/.dotfiles/ssh-aliases.zsh
