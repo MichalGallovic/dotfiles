@@ -110,6 +110,5 @@ export LANG=en_US.UTF-8
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
