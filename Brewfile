@@ -62,7 +62,6 @@ cask 'herd'
 cask 'qlmarkdown'
 cask 'quicklook-json'
 
-
 # Mac App Store
 mas 'Keynote', id: 409183694
 mas 'Numbers', id: 409203825
