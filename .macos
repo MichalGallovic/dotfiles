@@ -25,14 +25,13 @@ defaults write com.apple.WindowManager EnableStandardClickToShowDesktop -bool fa
 # Disable the floating thumbnail for screenshots
 defaults write com.apple.screencapture show-thumbnail -bool false
 
+# Save screenshot to clipboard
+defaults write com.apple.screencapture target clipboard
+
 # Adjusting the Menu Bar Whitespace Settings so apps don't hide behind the notch
 # https://flaky.build/built-in-workaround-for-applications-hiding-under-the-macbook-pro-notch
 defaults -currentHost write -globalDomain NSStatusItemSelectionPadding -int 6
 defaults -currentHost write -globalDomain NSStatusItemSpacing -int 6
-# After running these commands, you need to log out and log back in
-# Revert to the original values
-# defaults -currentHost delete -globalDomain NSStatusItemSelectionPadding
-# defaults -currentHost delete -globalDomain NSStatusItemSpacing
 
 ###############################################################################
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
@@ -56,9 +55,6 @@ defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 ###############################################################################
 # Screen                                                                      #
 ###############################################################################
-
-# Save screenshots to the Dropbox
-defaults write com.apple.screencapture location -string "${HOME}/Library/CloudStorage/Dropbox/Screenshots"
 
 # Enable subpixel font rendering on non-Apple LCDs
 defaults write NSGlobalDomain AppleFontSmoothing -int 2
@@ -111,9 +107,6 @@ defaults write com.apple.finder WarnOnEmptyTrash -bool false
 
 # Empty Trash securely by default
 defaults write com.apple.finder EmptyTrashSecurely -bool true
-
-# Enable AirDrop over Ethernet and on unsupported Macs running Lion
-##defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool true
 
 # Show the ~/Library folder
 sudo chflags nohidden ~/Library
@@ -219,6 +212,3 @@ open -a "Firefox" --args --make-default-browser
 ##################################
 ###? osascript -e 'tell application "System Events" to make login item at end with properties {name: "Alfred 4",path:"/Applications/Alfred 4.app", hidden:false}'
 osascript -e 'tell application "System Events" to make login item at end with properties {name: "",path:"/Applications/MonitorControl.app", hidden:false}'
-
-
-echo "Done. Note that some of these changes require a logout/restart to take effect."

@@ -37,3 +37,6 @@ source .macos
 
 # Restore apps backed up with backup-apps.sh
 $DOTFILES/restore-apps.sh
+
+# Reboot
+sudo reboot
