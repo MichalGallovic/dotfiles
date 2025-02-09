@@ -32,5 +32,3 @@ alias git_last_tag="git tag --sort=-committerdate | head -n 10 | sort -Vr | head
 alias dotfiles="cd $DOTFILES"
 alias library="cd $HOME/Library"
 
-# Tratta
-source ~/.dotfiles/tratta-aliases.zsh

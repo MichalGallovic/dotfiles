@@ -4,4 +4,3 @@
 - PHPStorm - always select opened file
 - PHPStorm - Disable inlay hints
 - PHPStorm - exclude vendor and storage
-- Global ray - make sure to enable in your php version global-ray install

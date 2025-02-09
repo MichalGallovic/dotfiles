@@ -25,30 +25,6 @@ brew update
 brew tap homebrew/bundle
 brew bundle --file $DOTFILES/Brewfile
 
-brew services start mysql
-
-# Set default MySQL root password and auth type.
-mysql -u root -e "ALTER USER root@localhost IDENTIFIED WITH mysql_native_password BY 'password'; FLUSH PRIVILEGES;"
-mysql -u root -e "create user valet identified with mysql_native_password by 'secret'; GRANT ALL PRIVILEGES ON *.* TO 'valet'@'%'; FLUSH PRIVILEGES;"
-
-# Non brew dependencies
-# $DOTFILES/non-brew-install.sh
-
-# Install PHP extensions with PECL
-# printf "\n" accepts default for each prompt
-# if installation fails on pcre2.h then use
-# ln -s /opt/homebrew/Cellar/pcre2/10.39/include/pcre2.h /opt/homebrew/Cellar/php@7.4/7.4.26_1/include/php/ext/pcre/pcre2.h
-printf "\n" | pecl install imagick redis
-
-# Install global Composer packages
-/opt/homebrew/bin/composer global require laravel/installer laravel/valet laravel/vapor-cli beyondcode/expose spatie/global-ray
-
-# Install Laravel Valet
-$HOME/.composer/vendor/bin/valet install
-
-# Install Global Ray
-$HOME/.composer/vendor/bin/global-ray install
-
 # Symlink the Mackup config file to the home directory
 ln -s $HOME/.dotfiles/.mackup.cfg $HOME/.mackup.cfg
 

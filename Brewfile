@@ -1,12 +1,3 @@
-# Taps
-tap 'homebrew/cask'
-tap 'homebrew/cask-fonts'
-tap 'homebrew/cask-versions'
-tap 'homebrew/bundle'
-tap 'heroku/brew'
-tap 'nicoverbruggen/homebrew-cask'
-tap 'hashicorp/tap'
-
 # Binaries
 brew 'bash' # Latest Bash version
 brew 'coreutils' # Those that come with macOS are outdated
