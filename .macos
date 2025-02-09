@@ -186,9 +186,3 @@ defaults write com.apple.Safari SuppressSearchSuggestions -bool true
 # Default Browser
 #################
 open -a "Firefox" --args --make-default-browser
-
-##################################
-# Login Items
-##################################
-###? osascript -e 'tell application "System Events" to make login item at end with properties {name: "Alfred 4",path:"/Applications/Alfred 4.app", hidden:false}'
-osascript -e 'tell application "System Events" to make login item at end with properties {name: "",path:"/Applications/MonitorControl.app", hidden:false}'
