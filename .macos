@@ -33,6 +33,9 @@ defaults write com.apple.screencapture target clipboard
 defaults -currentHost write -globalDomain NSStatusItemSelectionPadding -int 6
 defaults -currentHost write -globalDomain NSStatusItemSpacing -int 6
 
+# . for decimal points and , for thousands
+defaults write NSGlobalDomain AppleICUNumberSymbols -dict-add 0 "." 1 ","
+
 ###############################################################################
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
 ###############################################################################
@@ -51,6 +54,25 @@ defaults write NSGlobalDomain InitialKeyRepeat -int 20
 
 # Disable auto-correct
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
+
+# Turn off "Correct spelling automatically"
+defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
+
+# Turn off "Capitalise words automatically"
+defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false
+
+# Turn off "Show inline predictive text"
+defaults write NSGlobalDomain NSAutomaticTextCompletionEnabled -bool false
+
+###############################################################################
+# Mail                                                                        #
+###############################################################################
+
+# Disable the automatic period that macos adds after double space
+defaults write NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled -bool false
+
+# Disable automatic spell checking
+defaults write com.apple.mail SpellCheckingBehavior -string "NoSpellCheckingEnabled"
 
 ###############################################################################
 # Screen                                                                      #
