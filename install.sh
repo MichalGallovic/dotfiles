@@ -14,6 +14,10 @@ if test ! $(which brew); then
   eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
+# Create Documents folders
+mkdir -p ~/Documents/Screenshots
+mkdir -p ~/Documents/Code
+
 # Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
 rm -rf $HOME/.zshrc
 cp $HOME/.dotfiles/.to-copy-zshrc $HOME/.zshrc
