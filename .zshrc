@@ -71,3 +71,8 @@ export HERD_PHP_83_INI_SCAN_DIR="/Users/michalgallovic/Library/Application Suppo
 
 # Herd injected PHP 8.3 configuration.
 export HERD_PHP_83_INI_SCAN_DIR="/Users/michalgallovic/Library/Application Support/Herd/config/php/83/"
+
+# ASDF
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+
+. "$HOME/.local/bin/env"

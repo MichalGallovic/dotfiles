@@ -30,3 +30,14 @@ csv_to_datasette() {
 _datasette() {
   datasette $1 --setting sql_time_limit_ms 10000 --setting facet_time_limit_ms 10000 -o
 }
+
+llmcommit() {
+  # Generate commit message using LLM from staged diff
+  local tmpfile
+  tmpfile=$(mktemp)
+
+  git --no-pager diff --cached | llm -m gpt-4o "Write a concise Git commit message summarizing these staged changes" > "$tmpfile"
+  git commit --edit -F "$tmpfile"
+
+  rm "$tmpfile"
+}

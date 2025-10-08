@@ -9,6 +9,7 @@ alias brew_bundle="brew bundle --file $DOTFILES/Brewfile"
 
 # Laravel
 alias art="php artisan"
+alias delete_logs="rm storage/logs/*.log"
 
 # Git
 alias add="git add . --all"

@@ -56,6 +56,7 @@ cask 'teamviewer'
 cask 'loom'
 cask 'portfolioperformance'
 cask 'herd'
+cask 'postman'
 
 # Quicklook
 cask 'qlmarkdown'
