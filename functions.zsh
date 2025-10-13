@@ -36,7 +36,7 @@ llmcommit() {
   local tmpfile
   tmpfile=$(mktemp)
 
-  git --no-pager diff --cached | llm -m gpt-4o "Write a concise Git commit message summarizing these staged changes" > "$tmpfile"
+  git --no-pager diff --cached | llm -m gpt-5-nano "Write a concise Git commit message summarizing these staged changes" > "$tmpfile"
   git commit --edit -F "$tmpfile"
 
   rm "$tmpfile"
