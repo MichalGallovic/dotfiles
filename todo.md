@@ -4,3 +4,4 @@
 - PHPStorm - always select opened file
 - PHPStorm - Disable inlay hints
 - PHPStorm - exclude vendor and storage
+- Desktop & Dock > uncheck Tiled windows have margins

@@ -41,3 +41,11 @@ llmcommit() {
 
   rm "$tmpfile"
 }
+
+json() {
+  echo $1 | jq . | pbcopy
+}
+
+xml() {
+  echo "$1" | xmllint --format - | pbcopy
+}
