@@ -32,4 +32,6 @@ alias git_last_tag="git tag --sort=-committerdate | head -n 10 | sort -Vr | head
 # Directories
 alias dotfiles="cd $DOTFILES"
 alias library="cd $HOME/Library"
-
+alias ccc="claude --dangerously-skip-permissions"
+alias xxx="codex --yolo"
+alias parallel="php artisan test --parallel"
