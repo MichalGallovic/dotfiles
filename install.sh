@@ -35,6 +35,11 @@ ln -s $HOME/.dotfiles/.mackup.cfg $HOME/.mackup.cfg
 # Symlink the global gitignore
 ln -s $HOME/.dotfiles/.gitignore_global $HOME/.gitignore
 
+# Symlink the global Claude Code instructions
+mkdir -p $HOME/.claude
+ln -s $HOME/.dotfiles/claude/CLAUDE.md $HOME/.claude/CLAUDE.md
+ln -s $HOME/.dotfiles/claude/settings.json $HOME/.claude/settings.json
+
 # Set macOS preferences
 # We will run this last because this will reload the shell
 source .macos
